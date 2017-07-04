@@ -8,6 +8,7 @@ layout: compress
 <!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
 <head>
   {% include head.html %}
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/countdown.css">
 </head>
 <body>
     {% include nav.html %}
@@ -16,7 +17,7 @@ layout: compress
         <div class="container animated fadeIn">
             <div class="row">
                     <a href="{{ site.url }}">
-                      <img src="{{ site.logo }}" class="img-circle zoombtn animated rotateIn">
+                      <!-- <img src="{{ site.logo }}" class="img-circle zoombtn animated rotateIn"> -->
                       <div id="countdown-timer"></div>
                     </a>
                     <h3 class="title">
@@ -49,6 +50,5 @@ layout: compress
   </body>
 
   <footer>
-  http://progressbarjs.readthedocs.org/en/1.0.0/
   </footer>
 </html>

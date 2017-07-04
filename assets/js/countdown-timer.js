@@ -1,3 +1,4 @@
+alert('loaded');
 var bar = new ProgressBar.Circle('#countdown-timer', {
   strokeWidth: 50,
   duration: 10000,
@@ -5,5 +6,4 @@ var bar = new ProgressBar.Circle('#countdown-timer', {
   trailColor: '#AFEEEE',
   svgStyle: null
 });
-alert('loaded');
 bar.animate(1.0);
