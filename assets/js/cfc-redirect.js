@@ -11,7 +11,7 @@ var bar = new ProgressBar.Circle('#countdown-timer', {
 bar.animate(1.0);
 
 function cfcRedirect() {
-  alert('redirect now');
+  console.log('redirecting now');
 };
 
 setTimeout(cfcRedirect, redirectDelay);
