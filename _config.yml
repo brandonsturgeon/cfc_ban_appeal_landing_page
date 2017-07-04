@@ -5,7 +5,7 @@ logo:               'assets/img/logo.png'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-url:                http://localhost:4000
+url:                "https://brandonsturgeon.github.io/cfc_ban_appeal_landing_page/"
 redirectUrl:        "https://forums.cfcservers.org/newthread.php?fid=28"
 
 # Jekyll
