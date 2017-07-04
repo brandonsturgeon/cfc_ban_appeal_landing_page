@@ -2,7 +2,7 @@
 title:              CFC Ban Appeal
 description:        "CFC Ban Appeal Landing Page"
 logo:               'assets/img/logo.png'
-background:         'assets/img/mountain1.jpg'
+background:         'assets/img/mountain3.jpeg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
 url:                "https://appeal.cfcservers.org"
