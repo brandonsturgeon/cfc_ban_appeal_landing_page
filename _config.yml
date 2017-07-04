@@ -6,7 +6,7 @@ background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
 url:                http://localhost:4000
-redirectUrl:        "https://forums.cfcservers.org/forumdisplay.php?fid=28"
+redirectUrl:        "https://forums.cfcservers.org/newthread.php?fid=28"
 
 # Jekyll
 permalink:          /:title/
@@ -28,7 +28,7 @@ disqus_shortname:   taylantatli
 
 # Social
 # if you don't have any of social below, comment the line.
-#google:
+# google:
   #plus:            #username
   #analytics:
   #verify:

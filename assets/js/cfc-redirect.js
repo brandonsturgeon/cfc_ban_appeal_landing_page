@@ -11,7 +11,7 @@ var bar = new ProgressBar.Circle('#countdown-timer', {
 bar.animate(1.0);
 
 function cfcRedirect() {
-  console.log('redirecting now');
+  window.location = "https://forums.cfcservers.org/newthread.php?fid=28";
 };
 
 setTimeout(cfcRedirect, redirectDelay);
