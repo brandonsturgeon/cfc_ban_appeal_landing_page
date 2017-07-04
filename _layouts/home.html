@@ -11,39 +11,44 @@ layout: compress
   <link rel="stylesheet" href="{{ site.url }}/assets/css/countdown.css">
 </head>
 <body>
-    {% include nav.html %}
-    <!-- Header -->
-    <header class="header flex" role="banner">
-        <div class="container animated fadeIn">
-            <div class="row">
-                    <a href="{{ site.url }}">
-                      <!-- <img src="{{ site.logo }}" class="img-circle zoombtn animated rotateIn"> -->
-                      <div style="display:flex;justify-content:center;align-items:center;width:100%;">
-                        <div id="countdown-timer" class="img-circle zoombtn animated"></div>
-                      </div>
-                    </a>
-                    <h3 class="title">
-                        <a class="zoombtn" href="{{ site.url }}">
-                        	<p style="font-size:1.2rem;font-weight:400;margin-top:0px;">{{ site.title }}</p>
-			            </a>
-                    </h3>
-                    <hr class="hr-line">
-                    <h3 class="title">
-                        <a href="{{ site.url }}">
-                        	<p style="font-size:1rem;font-weight:300">{{ site.bio }}</p>
-			            </a>
-                    </h3>
+  {% include nav.html %}
+  <!-- Header -->
+  <header class="header flex" role="banner">
 
-                  <hr class="hr-line">
-                  <h3 class="title">
-                    <a class="btn zoombtn" href="https://forums.cfcservers.org/forumdisplay.php?fid=28">
-                      Click here to redirect now
-                    </a>
-                 </h3>
-            </div>
+  <div class="container animated fadeIn">
+    <div class="row">
+      <a href="{{ site.url }}">
+        <!-- <img src="{{ site.logo }}" class="img-circle zoombtn animated rotateIn"> -->
+        <div style="display:flex;justify-content:center;align-items:center;width:100%;">
+          <div id="countdown-timer" class="img-circle zoombtn animated"></div>
         </div>
-    </header>
-    {% include scripts.html %}
+      </a>
+
+      <h3 class="title">
+        <a class="zoombtn" href="{{ site.url }}">
+        	<p style="font-size:1.2rem;font-weight:400;margin-top:0px;">{{ site.title }}</p>
+        </a>
+      </h3>
+
+      <hr class="hr-line">
+      <h3 class="title">
+        <a href="{{ site.url }}"></a>
+        <!-- <p style="font-size:1rem;font-weight:300">{{ site.bio }}</p> -->
+        <p style="font-size: 1rem; font-weight: 300;"> You are being redirected to our forums.</p>
+        <p style="font-size: 1rem; font-weight: 300;"> You must log in through Steam before posting an appeal.</p>
+      </h3>
+
+      <hr class="hr-line">
+
+      <h3 class="title">
+        <a class="btn zoombtn" href="{{ site.redirectUrl }}">
+          Click here to redirect now
+        </a>
+      </h3>
+      </div>
+    </div>
+  </header>
+  {% include scripts.html %}
   </body>
 
   <footer>
