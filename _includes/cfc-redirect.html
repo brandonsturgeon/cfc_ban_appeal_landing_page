@@ -1,0 +1,19 @@
+<script>
+  redirectDelay = 10000;
+
+  const bar = new ProgressBar.Circle('#countdown-timer', {
+    strokeWidth: 50,
+    duration: redirectDelay,
+    color: 'black',
+    trailColor: '#AFEEEE',
+    svgStyle: null
+  });
+
+  bar.animate(1.0);
+
+  const cfcRedirect = () => {
+    window.location = "{{ site.redirectUrl }}";
+  };
+
+  setTimeout(cfcRedirect, redirectDelay);
+</script>
