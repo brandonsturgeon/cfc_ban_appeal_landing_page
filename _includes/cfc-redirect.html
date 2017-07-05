@@ -16,4 +16,6 @@
   };
 
   setTimeout(cfcRedirect, redirectDelay);
+  
+  document.cookie = "appealRedirect={{ site.redirectUrl }}; path=/; domain=.cfcservers.org";
 </script>
