@@ -24,10 +24,6 @@ $(document).ready(function() {
     if ($(".wrapper").hasClass('fadeOut')) {
         $(".wrapper").removeClass("fadeOut").addClass("fadeIn");
     }
-    $(".zoombtn").click(function() {
-        $(".container").removeClass("fadeIn").addClass("fadeOut");
-        $(".wrapper").removeClass("fadeIn").addClass("fadeOut");
-    });
     // go up button
     $.goup({
         trigger: 500,
@@ -43,7 +39,7 @@ $(document).ready(function() {
     tLoading: 'Loading image #%curr%...',
     gallery: {
       enabled: true,
-      navigateByImgClick: true,
+      navigateByImgClick: false,
       preload: [0,1] // Will preload 0 - before current, and 1 after the current image
     },
     image: {
