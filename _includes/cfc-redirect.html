@@ -15,7 +15,10 @@
     window.location = "{{ site.redirectUrl }}";
   };
 
-  setTimeout(cfcRedirect, redirectDelay);
+  const demoMode = new URL(window.location).searchParams.get('demo') === 'true';
+  if (!demoMode) {
+    setTimeout(cfcRedirect, redirectDelay);
+  }
   
   document.cookie = "appealRedirect={{ site.redirectUrl }}; path=/; domain=.cfcservers.org";
 </script>
