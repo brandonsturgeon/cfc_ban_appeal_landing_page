@@ -4,8 +4,8 @@
     <script src="{{ site.url }}/assets/js/jquery.goup.min.js"></script>
     <script src="{{ site.url }}/assets/js/jquery.magnific-popup.min.js"></script>
     <script src="{{ site.url }}/assets/js/jquery.fitvid.min.js"></script>
-    <script src="{{ site.url }}/assets/js/progressbar.js"></script>
-    <script src="{{ site.url }}/assets/js/scripts.js"></script>
+    <script src="{{ site.url }}/assets/js/progressbar.js" defer="defer"></script>
+    <script src="{{ site.url }}/assets/js/scripts.js" defer="defer"></script>
     {% if site.google.analytics %}
     <!-- Asynchronous Google Analytics snippet -->
     <script>
@@ -19,6 +19,3 @@
     </script>
     {% endif %}
     {% include cfc-redirect.html %}
-    {% if page.comments != false %}
-        {% include disqus_comments.html %}
-    {% endif %}
