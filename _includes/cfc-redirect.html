@@ -17,8 +17,17 @@
 
   const demoMode = new URL(window.location).searchParams.get('demo') === 'true';
   if (!demoMode) {
+    setTimeout(alert('DEMO: Window would normally redirect now'), redirectDelay);
+  } else {
     setTimeout(cfcRedirect, redirectDelay);
   }
   
-  document.cookie = "appealRedirect={{ site.redirectUrl }}; path=/; domain=.cfcservers.org";
+  const cookieExpire = new Date();
+  // 5 minute expiration
+  cookieExpire.setTime(date.getTime() + (5 * 60 * 1000));
+  
+  const cookieExpireString = `expires=${cookieExpire}`;
+  const cookieString = "appealRedirect={{ site.redirectUrl }}; path=/; domain=.cfcservers.org; " + cookieExpireString;
+  
+  document.cookie = 
 </script>
