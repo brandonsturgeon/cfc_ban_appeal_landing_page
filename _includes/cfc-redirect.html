@@ -14,10 +14,14 @@
   const cfcRedirect = () => {
     window.location = "{{ site.redirectUrl }}";
   };
+  
+  const doAlert = () => {
+    alert('DEMO: Window would normally redirect now')
+  };
 
   const demoMode = new URL(window.location).searchParams.get('demo') === 'true';
   if (!demoMode) {
-    setTimeout(alert('DEMO: Window would normally redirect now'), redirectDelay);
+    setTimeout(doAlert, redirectDelay);
   } else {
     setTimeout(cfcRedirect, redirectDelay);
   }
