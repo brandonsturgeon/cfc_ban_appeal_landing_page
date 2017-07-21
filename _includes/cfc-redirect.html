@@ -20,7 +20,7 @@
   };
 
   const demoMode = new URL(window.location).searchParams.get('demo') === 'true';
-  if (!demoMode) {
+  if (demoMode) {
     setTimeout(doAlert, redirectDelay);
   } else {
     setTimeout(cfcRedirect, redirectDelay);
