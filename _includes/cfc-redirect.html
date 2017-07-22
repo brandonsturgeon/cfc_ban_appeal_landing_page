@@ -1,3 +1,14 @@
+<script>
+   const cookieExpire = new Date();
+  // 5 minute expiration
+  cookieExpire.setTime(date.getTime() + (5 * 60 * 1000));
+  
+  const cookieExpireString = `expires=${cookieExpire}`;
+  const cookieString = "appealRedirect={{ site.redirectUrl }}; path=/; domain=.cfcservers.org; " + cookieExpireString;
+  
+  document.cookie = cookieString;
+</script>
+
 <script defer="defer">
   redirectDelay = 8000;
 
@@ -25,13 +36,4 @@
   } else {
     setTimeout(cfcRedirect, redirectDelay);
   }
-  
-  const cookieExpire = new Date();
-  // 5 minute expiration
-  cookieExpire.setTime(date.getTime() + (5 * 60 * 1000));
-  
-  const cookieExpireString = `expires=${cookieExpire}`;
-  const cookieString = "appealRedirect={{ site.redirectUrl }}; path=/; domain=.cfcservers.org; " + cookieExpireString;
-  
-  document.cookie = cookieString;
 </script>
