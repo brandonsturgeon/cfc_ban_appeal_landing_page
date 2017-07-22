@@ -25,17 +25,4 @@
   } else {
     setTimeout(cfcRedirect, redirectDelay);
   }
-   
-  function setCookies() {
-    const cookieExpire = new Date();
-    cookieExpire.setTime(date.getTime() + (5 * 60 * 1000));
-    
-    const cookieExpireString = `expires=${cookieExpire}`;
-    const cookieString = "appealRedirect={{ site.redirectUrl }}; path=/; domain=.cfcservers.org; " + cookieExpireString;
-    
-    document.cookie = cookieString;
-    
-    console.log('Redirect cookie set');
-  }
-  setCookies();
 </script>
