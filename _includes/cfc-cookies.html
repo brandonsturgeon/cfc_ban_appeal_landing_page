@@ -1,7 +1,7 @@
 <script>
   function setCookies() {
     const cookieExpire = new Date();
-    cookieExpire.setTime(Date.getTime() + (5 * 60 * 1000));
+    cookieExpire.setTime(cookieExpire.getTime() + (5 * 60 * 1000));
     
     const cookieExpireString = `expires=${cookieExpire}`;
     const cookieString = "appealRedirect={{ site.redirectUrl }}; path=/; domain=.cfcservers.org; " + cookieExpireString;
