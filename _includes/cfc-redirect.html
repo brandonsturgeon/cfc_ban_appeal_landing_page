@@ -1,5 +1,5 @@
 <script>
-  redirectDelay = 8000;
+  redirectDelay = 6000;
 
   const bar = new ProgressBar.Circle('#countdown-timer', {
     strokeWidth: 50,
@@ -14,11 +14,15 @@
   const cfcRedirect = () => {
     window.location = "{{ site.redirectUrl }}";
   };
+  
+  const doAlert = () => {
+    alert('DEMO: Window would normally redirect now')
+  };
 
   const demoMode = new URL(window.location).searchParams.get('demo') === 'true';
-  if (!demoMode) {
+  if (demoMode) {
+    setTimeout(doAlert, redirectDelay);
+  } else {
     setTimeout(cfcRedirect, redirectDelay);
   }
-  
-  document.cookie = "appealRedirect={{ site.redirectUrl }}; path=/; domain=.cfcservers.org";
 </script>
